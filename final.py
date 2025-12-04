@@ -29,6 +29,9 @@ class Driver(Person):
 
         print(f"{self.name} is delivering {self.order} to {Customer.__name__} using {self.vehicle}.")
         (check == True)
+
+    def delivered(self):
+        print(f"Final Status:\nOrder for {self.order} → delivered\nOrder for {self.order} → delivered")
         
         
 
@@ -72,8 +75,10 @@ print()
 driver.deliver(customer1.place_order("Laptop"))
 driver.deliver(customer2.place_order("Headphone"))
 
-driver.deliver(customer1.place_order("Laptop"))
-driver.deliver(customer2.place_order("Headphone"))
+# driver.delivered(("Laptop"))
+# driver.delivered(("Headphone"))
+# driver.deliver(customer1.place_order("Laptop"))
+# driver.deliver(customer2.place_order("Headphone"))
 
 
 
